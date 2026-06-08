@@ -1,0 +1,14 @@
+{
+    "name": "otp-verify",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ioredis": "^4.28.5"
+   
+  }
+}   
