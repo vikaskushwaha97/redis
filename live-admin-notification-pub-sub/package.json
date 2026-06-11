@@ -1,0 +1,16 @@
+{
+    "name": "live-admin-notification-pub-sub",
+    "version": "1.0.0",
+    "description": "A simple pub/sub system for live admin notifications.",
+    "main": "index.js",
+    "scripts": {
+"api": "node src/api.js",
+"subscriber": "node src/subscriber.js"
+    },
+   
+    "dependencies": {
+        "express": "^4.17.1",
+        "ioredis": "^4.0.0"
+    }
+
+}
