@@ -16,13 +16,13 @@ const wsServer = new WebSocketServer({ server: httpServer });
 wsServer.on("connection", (websocket) => {
     console.log("New client connected....");
 
-    websocket.send("pong! , hello from the server")
-    console.log
-    
+    websocket.send("pong! , hello from the server")    
 
 
     websocket.on("message", (message) => {
         console.log(`Received message: ${message.toString()}`);
+        wsServer.clients.forEach((clients)=>
+        clients.send(message.toString()));
     });
 });
 

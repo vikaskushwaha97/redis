@@ -38,6 +38,10 @@
 
         connection.onopen = ()=>
     {
+        connection.onmessage= message=>
+    {
+        console.log('message recived',message);
+    };
         messageSendButton.addEventListener('click',(ev)=>
     {
 const value = messageInput.value
